@@ -2,7 +2,7 @@
  * @Author       : WXj
  * @Date         : 2026-09-25 23:26:13
  * @LastEditors  : Wangxiaojie
- * @LastEditTime : 2026-09-26 10:23:59
+ * @LastEditTime : 2026-09-26 22:41:46
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\st7735.h
  */
@@ -11,14 +11,14 @@
 
 #include <stdint.h>
 
-#define LCD_WIDTH    128
-#define LCD_HEIGHT   160
+#define LCD_WIDTH    160
+#define LCD_HEIGHT   128
 
 #define LCD_X_OFFSET  0
 #define LCD_Y_OFFSET  0
 
 /* Portrait panel profile. Adjust only if the module requires it. */
-#define LCD_MADCTL          0xC8
+#define LCD_MADCTL          0xA8
 #define LCD_INVERT_COLORS   0
 #define LCD_BL_ACTIVE_HIGH  1
 
