@@ -1,0 +1,31 @@
+# Keil uVision build output
+Objects/
+Listings/
+
+# Keil debugger and local user configuration
+DebugConfig/
+*.uvoptx
+*.uvguix*
+
+# Common compiler and linker output
+*.o
+*.obj
+*.crf
+*.d
+*.dep
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.lnp
+*.htm
+*.iex
+*.sct
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.swp
+*~
