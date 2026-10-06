@@ -435,6 +435,16 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\st7735.h</FilePath>
             </File>
+            <File>
+              <FileName>ultrasonic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\ultrasonic.c</FilePath>
+            </File>
+            <File>
+              <FileName>ultrasonic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\ultrasonic.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -719,6 +729,16 @@
               <FileName>Delay.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\System\Delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\System\Timer.h</FilePath>
             </File>
           </Files>
         </Group>

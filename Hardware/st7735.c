@@ -2,6 +2,14 @@
  * @Author       : WXj
  * @Date         : 2026-09-25 23:25:49
  * @LastEditors  : Wangxiaojie
+ * @LastEditTime : 2026-09-29 19:52:58
+ * @Description  : 
+ * @FilePath     : \STM32超声波测距方案\Hardware\st7735.c
+ */
+/*
+ * @Author       : WXj
+ * @Date         : 2026-09-25 23:25:49
+ * @LastEditors  : Wangxiaojie
  * @LastEditTime : 2026-09-26 22:39:22
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\st7735.c
