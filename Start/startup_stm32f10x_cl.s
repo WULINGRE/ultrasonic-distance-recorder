@@ -1,6 +1,6 @@
 ;******************** (C) COPYRIGHT 2011 STMicroelectronics ********************
 ;* File Name          : startup_stm32f10x_cl.s
-;* Author             : thuanngo
+;* Author             : MCD Application Team
 ;* Version            : V3.5.0
 ;* Date               : 11-March-2011
 ;* Description        : STM32F10x Connectivity line devices vector table for MDK-ARM 

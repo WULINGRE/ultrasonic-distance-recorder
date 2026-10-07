@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
   * @file    stm32f10x_bkp.c
-  * @author thuanngo
+  * @author  MCD Application Team
   * @version V3.5.0
   * @date    11-March-2011
   * @brief   This file provides all the BKP firmware functions.

@@ -1,4 +1,3 @@
-# Author: thuanngo
 param([string]$MsvcRoot = 'D:\VStool\VC\Tools\MSVC\14.51.36231')
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path $PSScriptRoot -Parent

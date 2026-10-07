@@ -1,4 +1,3 @@
-/* Author: thuanngo */
 #ifndef __LED_H
 #define __LED_H
 

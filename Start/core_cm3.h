@@ -1,4 +1,3 @@
-/* Author: thuanngo */
 /**************************************************************************//**
  * @file     core_cm3.h
  * @brief    CMSIS Cortex-M3 Core Peripheral Access Layer Header File

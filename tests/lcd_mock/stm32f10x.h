@@ -1,4 +1,3 @@
-/* Author: thuanngo */
 #ifndef LCD_TEST_STM32_H
 #define LCD_TEST_STM32_H
 #include <stdint.h>
