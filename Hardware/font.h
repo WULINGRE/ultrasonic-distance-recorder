@@ -16,12 +16,23 @@ extern "C" {
 #endif
 
 /* ============================================================
- * ASCII font
+ * ASCII font -- monospaced 8 x 16 cell
  *
  * Character range : 0x20 (' ') ~ 0x7E ('~')
- * Glyph size      : 8 x 16 pixels
+ * Glyph size      : 8 x 16 pixels, fixed pitch
  * Storage         : 16 bytes / glyph, one byte per row
  * Bit order       : bit7 = left-most pixel, bit0 = right-most
+ *
+ * Metrics (all glyphs obey these):
+ *   - ink confined to x1..x6      -> 1px bearing on both sides
+ *   - cap height   rows 3..12    (baseline = row 12)
+ *   - x-height     rows 7..12
+ *   - ascenders    start row 2
+ *   - descenders   end   row 14  (g j p q y , ;)
+ *   - 1px strokes (no 2px vertical stem; 2px appears only as the
+ *     horizontal crossbar of E F H I K L T Z + = # * $)
+ *
+ * LCD_ShowChar() therefore advances x by exactly 8 per character.
  * ============================================================ */
 
 #define FONT_ASCII_FIRST          0x20U
