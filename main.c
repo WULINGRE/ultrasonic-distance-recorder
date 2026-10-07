@@ -2,7 +2,7 @@
  * @Author       : WXj
  * @Date         : 2026-09-25 23:00:11
  * @LastEditors  : Wangxiaojie
- * @LastEditTime : 2026-09-29 19:57:01
+ * @LastEditTime : 2026-10-07 10:55:11
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\main.c
  */
@@ -75,12 +75,12 @@ int main(void)
 		}
 		else
 		{
-			distance_mm = cs100a_getDistanceMm();
+			distance_mm = cs100a_CalDistanceMm();
 			LCD_Fill(0,64,63,80,LCD_WHITE);
 			LCD_ShowUnit(0,64,distance_mm,LCD_GREEN,LCD_WHITE,1);
 			
 		}
-		Delay_ms(500);
+		Delay_ms(300);
 	}
 	
 	

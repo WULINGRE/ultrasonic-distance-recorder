@@ -2,7 +2,7 @@
  * @Author       : WXj
  * @Date         : 2026-09-26 22:50:58
  * @LastEditors  : Wangxiaojie
- * @LastEditTime : 2026-09-29 19:48:25
+ * @LastEditTime : 2026-10-07 11:02:30
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\ultrasonic.c
  */
@@ -174,6 +174,23 @@ uint16_t cs100a_getDistanceMm(void)
         echo_us * 343UL / 2000UL;
 
     return (uint16_t)distance_mm;
+}
+
+uint16_t cs100a_CalDistanceMm(void)
+{
+    uint32_t buffer[10];
+    for (int i = 0; i < 10; i++)
+    {
+        cs100a_start();
+        while (!cs100a_isFinished())
+        {
+            ;
+        }
+        buffer[i] = cs100a_getDistanceMm();
+        Delay_ms(10);
+    }
+
+    return (uint16_t)(buffer[0] + buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5] + buffer[6] + buffer[7] + buffer[8] + buffer[9]) / 10;
 }
 
 uint8_t cs100a_isBusy(void)

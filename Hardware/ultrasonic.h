@@ -61,6 +61,8 @@ uint16_t cs100a_getEchoTimeUs(void);
 
 uint16_t cs100a_getDistanceMm(void);
 
+uint16_t cs100a_CalDistanceMm(void);
+
 uint8_t cs100a_isBusy(void);
 
 
