@@ -2,7 +2,7 @@
  * @Author       : WXj
  * @Date         : 2026-09-26 22:50:58
  * @LastEditors  : Wangxiaojie
- * @LastEditTime : 2026-10-07 11:02:30
+ * @LastEditTime : 2026-10-07 16:49:14
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\ultrasonic.c
  */
@@ -13,6 +13,24 @@
 
 volatile cs100a_state  g_cs100a_state    = cs100a_idle;
 volatile uint16_t      g_cs100a_echo_time = 0;
+
+
+
+static void SortData(uint16_t *data, uint8_t size)
+{
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = 0; j < size - 1 - i; j++)
+        {
+            if (data[j] > data[j+1])
+            {
+                uint16_t temp = data[j];
+                data[j] = data[j+1];
+                data[j+1] = temp;
+            }
+        }
+    }
+}
 
 
 static void cs100a_EXTI_init(void)
@@ -92,7 +110,7 @@ void cs100a_start(void)
 
     GPIO_SetBits(CS100A_TRIG_GPIO, CS100A_TRIG_PIN);
 
-    Delay_us(10); // 10us pulse
+    Delay_us(50); // 50us pulse
 
     GPIO_ResetBits(CS100A_TRIG_GPIO, CS100A_TRIG_PIN);
 
@@ -178,7 +196,7 @@ uint16_t cs100a_getDistanceMm(void)
 
 uint16_t cs100a_CalDistanceMm(void)
 {
-    uint32_t buffer[10];
+    uint16_t buffer[10];
     for (int i = 0; i < 10; i++)
     {
         cs100a_start();
@@ -189,8 +207,16 @@ uint16_t cs100a_CalDistanceMm(void)
         buffer[i] = cs100a_getDistanceMm();
         Delay_ms(10);
     }
+    SortData(buffer, 10);
 
-    return (uint16_t)(buffer[0] + buffer[1] + buffer[2] + buffer[3] + buffer[4] + buffer[5] + buffer[6] + buffer[7] + buffer[8] + buffer[9]) / 10;
+    uint32_t sum = 0;
+
+    for (int i = 2; i < 8; i++)
+    {
+        sum += buffer[i];
+    }
+
+    return (uint16_t)(sum / 6 ) ;
 }
 
 uint8_t cs100a_isBusy(void)
