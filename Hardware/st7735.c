@@ -1,15 +1,15 @@
 /*
- * @Author       : WXj
+ * @Author       : thuanngo
  * @Date         : 2026-09-25 23:25:49
- * @LastEditors  : Wangxiaojie
+ * @LastEditors  : thuanngo
  * @LastEditTime : 2026-09-29 19:52:58
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\st7735.c
  */
 /*
- * @Author       : WXj
+ * @Author       : thuanngo
  * @Date         : 2026-09-25 23:25:49
- * @LastEditors  : Wangxiaojie
+ * @LastEditors  : thuanngo
  * @LastEditTime : 2026-09-26 22:39:22
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\st7735.c

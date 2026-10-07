@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Author: thuanngo
 """
 Parse Hardware/font.c and render text exactly the way LCD_ShowChar() /
 LCD_ShowStringUTF8() does (8x16 cell, MSB = left-most pixel, fixed 8 px advance),

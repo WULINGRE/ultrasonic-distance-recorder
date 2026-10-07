@@ -1,3 +1,4 @@
+/* Author: thuanngo */
 /* Host regression test: compile the real driver against a recording SPI/GPIO
    adapter. No MCU, electrical timing, or physical LCD is simulated. */
 #include "stm32f10x.h"

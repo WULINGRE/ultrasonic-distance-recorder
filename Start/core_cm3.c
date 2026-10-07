@@ -1,3 +1,4 @@
+/* Author: thuanngo */
 /**************************************************************************//**
  * @file     core_cm3.c
  * @brief    CMSIS Cortex-M3 Core Peripheral Access Layer Source File

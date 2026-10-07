@@ -1,6 +1,8 @@
+# Author: thuanngo
 # Keil uVision build output
 Objects/
 Listings/
+
 
 # Keil debugger and local user configuration
 DebugConfig/
@@ -29,3 +31,19 @@ DebugConfig/
 *.tmp
 *.swp
 *~
+
+# Local credentials and private configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml

@@ -1,7 +1,7 @@
 /*
- * @Author       : WXj
+ * @Author       : thuanngo
  * @Date         : 2026-09-26 22:50:58
- * @LastEditors  : Wangxiaojie
+ * @LastEditors  : thuanngo
  * @LastEditTime : 2026-10-07 16:49:14
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\ultrasonic.c

@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
   * @file    stm32f10x_dma.h
-  * @author  MCD Application Team
+  * @author thuanngo
   * @version V3.5.0
   * @date    11-March-2011
   * @brief   This file contains all the functions prototypes for the DMA firmware 

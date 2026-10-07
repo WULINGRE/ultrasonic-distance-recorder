@@ -1,8 +1,8 @@
 /*
- * @Author       : WXj
+ * @Author       : thuanngo
  * @Date         : 2026-09-25 23:00:11
- * @LastEditors  : Wangxiaojie
- * @LastEditTime : 2026-10-07 10:55:11
+ * @LastEditors  : thuanngo
+ * @LastEditTime : 2026-10-07 17:06:09
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\main.c
  */

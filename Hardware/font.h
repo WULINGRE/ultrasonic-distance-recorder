@@ -1,7 +1,7 @@
 /*
- * @Author       : WXj
+ * @Author       : thuanngo
  * @Date         : 2026-09-26 16:54:05
- * @LastEditors  : Wangxiaojie
+ * @LastEditors  : thuanngo
  * @LastEditTime : 2026-09-26 17:05:36
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\font.h

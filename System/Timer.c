@@ -1,7 +1,7 @@
 /*
- * @Author       : WXj
+ * @Author       : thuanngo
  * @Date         : 2026-09-27 10:10:09
- * @LastEditors  : Wangxiaojie
+ * @LastEditors  : thuanngo
  * @LastEditTime : 2026-09-29 19:53:52
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\System\Timer.c

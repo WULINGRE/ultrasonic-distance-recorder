@@ -1,3 +1,4 @@
+/* Author: thuanngo */
 #include "font.h"
 
 /*

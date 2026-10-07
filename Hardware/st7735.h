@@ -1,7 +1,7 @@
 /*
- * @Author       : WXj
+ * @Author       : thuanngo
  * @Date         : 2026-09-25 23:26:13
- * @LastEditors  : Wangxiaojie
+ * @LastEditors  : thuanngo
  * @LastEditTime : 2026-09-26 22:41:46
  * @Description  : 
  * @FilePath     : \STM32超声波测距方案\Hardware\st7735.h
